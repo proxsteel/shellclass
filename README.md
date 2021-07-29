@@ -1,2 +1,0 @@
-# shellclass
-bash examples
