@@ -104,7 +104,7 @@ for NAME in ${USER_NAME}; do
         # Make sure the ARCHIVE_DIR directory exists
         if [[ ! -d "${ARCHIVE_DIR}" ]]; then
             log_msg "Creating ${ARCHIVE_DIR} directory"
-            mkdir -p ${ARCHIVE_DIR}
+            mkdir -p ${ARCHIVE_DIR}  #mkdir -p -- p option creates parent directory in case it doesn't exits 
             if [[ "${?}" -ne 0 ]]; then
                 log_msg "The Archive directory ${ARCHIVE_DIR} could not be created"
                 exit 1
